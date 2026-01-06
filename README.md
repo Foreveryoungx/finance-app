@@ -7,6 +7,7 @@ A premium, modern personal finance application built with Next.js 15, Tailwind C
 - **📊 Dashboard**: High-level overview of your financial health, including Net Worth, Monthly Spending, and Recent Transactions.
 - **💸 Transactions**: Detailed list view of all financial transactions with searching, filtering, and sorting capabilities.
 - **💰 Budgeting**: Visual budget planning with progress bars for each category to track spending against limits.
+- **🎯 Goals**: Track financial goals and savings progress with visual target indicators.
 - **📱 Responsive Design**: Fully responsive layout with a mobile-friendly navigation sidebar/drawer.
 - **🎨 Premium UI**: Dark mode-first design with a custom color palette (Navy, Slate, Blue) and glassmorphism details.
 

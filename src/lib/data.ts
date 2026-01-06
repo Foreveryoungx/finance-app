@@ -51,3 +51,19 @@ export const MOCK_BUDGET: BudgetCategory[] = [
     { id: 'b8', name: 'Healthcare', assigned: 100, spent: 45 },
     { id: 'b9', name: 'Travel', assigned: 500, spent: 0 },
 ];
+
+export interface Goal {
+    id: string;
+    name: string;
+    targetAmount: number;
+    currentAmount: number;
+    deadline?: string;
+    color: string;
+}
+
+export const MOCK_GOALS: Goal[] = [
+    { id: 'g1', name: 'Emergency Fund', targetAmount: 20000, currentAmount: 12500, deadline: '2025-12-31', color: '#10b981' },
+    { id: 'g2', name: 'New Car', targetAmount: 35000, currentAmount: 8400, color: '#3b82f6' },
+    { id: 'g3', name: 'European Vacation', targetAmount: 8000, currentAmount: 3200, deadline: '2024-06-01', color: '#8b5cf6' },
+    { id: 'g4', name: 'Home Down Payment', targetAmount: 100000, currentAmount: 45000, color: '#f59e0b' },
+];

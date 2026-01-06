@@ -67,3 +67,40 @@ export const MOCK_GOALS: Goal[] = [
     { id: 'g3', name: 'European Vacation', targetAmount: 8000, currentAmount: 3200, deadline: '2024-06-01', color: '#8b5cf6' },
     { id: 'g4', name: 'Home Down Payment', targetAmount: 100000, currentAmount: 45000, color: '#f59e0b' },
 ];
+
+export interface Asset {
+    name: string;
+    value: number;
+    color: string;
+    [key: string]: any;
+}
+
+export interface Holding {
+    id: string;
+    symbol: string;
+    name: string;
+    shares: number;
+    price: number;
+    change: number;
+    marketValue: number;
+    assetClass: string;
+}
+
+export const MOCK_ASSETS: Asset[] = [
+    { name: 'Stocks', value: 85000, color: '#2563eb' },      // Blue
+    { name: 'Bonds', value: 25000, color: '#10b981' },       // Green
+    { name: 'Real Estate', value: 15000, color: '#f59e0b' }, // Amber
+    { name: 'Cash', value: 12500, color: '#64748b' },        // Slate
+    { name: 'Crypto', value: 8500, color: '#8b5cf6' },       // Purple
+];
+
+export const MOCK_HOLDINGS: Holding[] = [
+    { id: 'h1', symbol: 'VTI', name: 'Vanguard Total Stock Market', shares: 150, price: 242.50, change: 1.25, marketValue: 36375, assetClass: 'Stocks' },
+    { id: 'h2', symbol: 'VXUS', name: 'Vanguard Total Intl Stock', shares: 200, price: 58.40, change: -0.45, marketValue: 11680, assetClass: 'Stocks' },
+    { id: 'h3', symbol: 'BND', name: 'Vanguard Total Bond Market', shares: 350, price: 72.10, change: 0.15, marketValue: 25235, assetClass: 'Bonds' },
+    { id: 'h4', symbol: 'AAPL', name: 'Apple Inc.', shares: 50, price: 185.90, change: 2.30, marketValue: 9295, assetClass: 'Stocks' },
+    { id: 'h5', symbol: 'O', name: 'Realty Income Corp', shares: 120, price: 52.40, change: -0.80, marketValue: 6288, assetClass: 'Real Estate' },
+    { id: 'h6', symbol: 'BTC', name: 'Bitcoin', shares: 0.15, price: 42500, change: 5.40, marketValue: 6375, assetClass: 'Crypto' },
+    { id: 'h7', symbol: 'MSFT', name: 'Microsoft Corp', shares: 25, price: 402.10, change: 1.85, marketValue: 10052, assetClass: 'Stocks' },
+    { id: 'h8', symbol: 'ETH', name: 'Ethereum', shares: 1.2, price: 2350, change: 3.20, marketValue: 2820, assetClass: 'Crypto' },
+];

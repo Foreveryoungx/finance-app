@@ -32,3 +32,22 @@ export const MOCK_TRANSACTIONS: Transaction[] = [
     { id: 't14', date: '2024-10-21', merchant: 'Comcast', category: 'Utilities', amount: 85.00, type: 'expense', status: 'posted' },
     { id: 't15', date: '2024-10-20', merchant: 'Amazon', category: 'Shopping', amount: 34.50, type: 'expense', status: 'posted' },
 ];
+
+export interface BudgetCategory {
+    id: string;
+    name: string;
+    assigned: number;
+    spent: number;
+}
+
+export const MOCK_BUDGET: BudgetCategory[] = [
+    { id: 'b1', name: 'Housing', assigned: 2400, spent: 2400 },
+    { id: 'b2', name: 'Groceries', assigned: 600, spent: 850 },
+    { id: 'b3', name: 'Dining', assigned: 300, spent: 420 },
+    { id: 'b4', name: 'Utilities', assigned: 200, spent: 180 },
+    { id: 'b5', name: 'Transport', assigned: 250, spent: 150 },
+    { id: 'b6', name: 'Entertainment', assigned: 200, spent: 320 },
+    { id: 'b7', name: 'Shopping', assigned: 150, spent: 210 },
+    { id: 'b8', name: 'Healthcare', assigned: 100, spent: 45 },
+    { id: 'b9', name: 'Travel', assigned: 500, spent: 0 },
+];
